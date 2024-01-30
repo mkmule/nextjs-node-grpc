@@ -3,24 +3,20 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev & node server.js",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
-    "dev-node": "node src-node/index.js"
+    "lint": "next lint"
   },
   "dependencies": {
-    "cors": "^2.8.5",
-    "express": "^4.18.2",
-    "morgan": "^1.10.0",
+    "@grpc/grpc-js": "^1.9.14",
+    "@grpc/proto-loader": "^0.7.10",
+    "grpc": "^1.24.11",
     "next": "14.1.0",
     "react": "^18",
     "react-dom": "^18"
   },
   "devDependencies": {
-    "@types/cors": "^2.8.17",
-    "@types/express": "^4.17.21",
-    "@types/morgan": "^1.9.9",
     "@types/node": "^20.11.10",
     "@types/react": "^18",
     "@types/react-dom": "^18",
